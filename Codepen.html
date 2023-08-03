@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Codepen.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <label
+          ><i class="fa-brands fa-html5" style="color: #f6090d"></i> HTML</label
+        >
+        <textarea id="html-code" onkeyup="run()"></textarea>
+
+        <label
+          ><i class="fa-brands fa-css3" style="color: #138eec"></i> CSS</label
+        >
+        <textarea id="css-code" onkeyup="run()"></textarea>
+
+        <label
+          ><i class="fa-brands fa-js fa-sm" style="color: #f5e509"></i>
+          JAVASCRIPT</label
+        >
+        <textarea id="js-code" onkeyup="run()"></textarea>
+      </div>
+      <div class="right">
+        <label
+          ><i class="fa-solid fa-play" style="color: #e1e4e4"></i> Output</label
+        >
+        <iframe id="Output"></iframe>
+      </div>
+    </div>
+    <script src="Codepen.js"></script>
+  </body>
+</html>
